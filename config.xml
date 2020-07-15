@@ -130,24 +130,12 @@
 	<gap:plugin name="cordova-plugin-file" source="npm" />
 
 	
-	<plugin name="cordova-plugin-fcm-with-dependecy-updated" source="npm" spec="~4.2.0" />
-	
-	<platform name="android">
-		<resource-file src="google-services.json" target="app/google-services.json" />
-	</platform>
-	
-	<platform name="ios">
-		<resource-file src="GoogleService-Info.plist" />
-	</platform>
-	
+
 	
 	<!-- Teclado sobrepondo para o android, igual iphone -->
 	<!--<preference name="android-windowSoftInputMode" value="adjustPan" />-->
 	
 	<!-- Custom Preferences-->
-	<!--<preference name="phonegap-version" value="3.7.0" />-->          <!-- all: current version of PhoneGap -->
-	<!--<preference name="phonegap-version" value="3.5.0" />-->          <!-- all: current version of PhoneGap -->
-	<!--<preference name="phonegap-version" value="3.6.3" />-->          <!-- all: current version of PhoneGap -->
 	<preference name="phonegap-version"           		value="cli-9.0.0" />      <!-- all: current version of PhoneGap -->
 	<preference name="orientation"                		value="portrait" />       <!-- all: default means both landscape and portrait are enabled -->
 	<preference name="target-device"              		value="universal" />      <!-- all: possible values handset, tablet, or universal -->
