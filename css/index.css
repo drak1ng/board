@@ -23,6 +23,19 @@
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FFF;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #FFF;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #FFF;
+}
+
 .ui-loader.ui-body-e { left:-9999px;}
 
 button { -webkit-appearance: none; }
