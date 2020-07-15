@@ -169,6 +169,7 @@ h1 {
 	left:0px;
 	z-index: 999;
 	padding:0px 5px;
+	background:#1A203E;
 }
 
 .topo-item1		{ float:left; color:#5EC4A3; padding:8px; font-size:30px; }
