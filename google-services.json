@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1006483725516",
+    "firebase_url": "https://onesignal-push-9f75d.firebaseio.com",
+    "project_id": "onesignal-push-9f75d",
+    "storage_bucket": "onesignal-push-9f75d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006483725516:android:05bea5c46ceac402d1b669",
+        "android_client_info": {
+          "package_name": "com.justrun.play"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006483725516-s8l7i0ugselkbtapiecvuki1i1fdrufc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB64wMKCchWBL_grSeMjw14dPBDMEZ0lEQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006483725516-s8l7i0ugselkbtapiecvuki1i1fdrufc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1006483725516-v13sr3b39gthf0nkae4613dvk2mld45l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.justrun.play",
+                "app_store_id": "1455870157"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
