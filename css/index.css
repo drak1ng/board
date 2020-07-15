@@ -163,32 +163,18 @@ h1 {
 }
 
 .topo {
-	width:100%;
+	width:calc(100% - 10px);
 	position:fixed;
 	top:0px;
 	left:0px;
 	z-index: 999;
+	padding:0px 5px;
 }
 
-.topo .logotipo {
-	background:#000;
-	color:#FFF;
-	text-align:center;
-	padding:10px 10px 5px 10px;
-	text-shadow: none;
-	text-transform: uppercase;
-}
-
-.topo .titulo_tela {
-	text-align:center;
-	font-weight:bold;
-	color:#FFF;
-	background:#303030;
-	padding:8px 0px 8px 0px;
-	font-size:18px;
-	font-weight: normal;
-	text-shadow:none !important;
-}
+.topo-item1		{ float:left; color:#5EC4A3; padding:8px; font-size:24px; }
+.topo-item2		{ float:left; color:#5EC4A3; padding:8px; font-size:18px; padding-top:12px; }
+.topo-item3		{ float:right; color:#5EC4A3; padding:8px; font-size:24px; }
+.topo-item4		{ float:right; color:#5EC4A3; padding:8px; font-size:24px; }
 
 .botoes-rodape {
 	position:fixed;
