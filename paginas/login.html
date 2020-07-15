@@ -32,12 +32,18 @@
 		<script type="text/javascript" src="../js/jquery.min.js"></script>
 		<script type="text/javascript" src="../js/jquery.mobile-1.4.5.min.js"></script>
 		<script type="text/javascript" src="../js/jquery.maskedinput.min.js"></script>
+		<style>
+			.login-logo			{ text-align:center; padding:80px 0px; background:url(../images/002.png) center bottom repeat-x; }
+		</style>
 	</head>
     <body>
-	    <div data-role="page" style="background: #000 !important; text-align:center;">
+	    <div data-role="page" style="background: #1A203E !important; text-align:center;">
+		    <div class="login-logo">
+			    <img src="../img/001.png" alt="001" width="302" height="223" />
+		    </div>
+		    
 			<div style="width:300px; height:460px; position:fixed; top:50%; left:50%; margin:-230px 0px 0px -150px;">
-			    <img src="../img/logo.png" alt="Board Finance" width="280" style="margin:0px 0px 10px 0px;">
-			    <br><br><br>
+
 			  <input type="email" id="login_email" value="" placeholder="E-mail" style="border:1px solid #CCC; border-radius:6px; background-color:rgba(255,255,255,1); font-family:'roboto'; text-shadow:none; padding:10px; color:#000;">
 			  <input type="password" id="login_senha" value="" placeholder="Senha" style="border:1px solid #CCC; border-radius:6px; background-color:rgba(255,255,255,1); font-family:'roboto'; text-shadow:none; padding:10px; color:#000;">
 			  <div style="border:1px solid #c30b19; border-radius:6px; background:#c30b19; color:#FFF; padding:10px 10px; margin-top:10px; text-shadow: none; text-transform:none; text-transform:uppercase; font-family:'roboto';" id="bt_login_acessar">Acessar</div>
@@ -62,7 +68,7 @@
 					if(email==""){ alert("O campo E-mail deve ser preenchido"); return false; }
 					if(senha==""){ alert("O campo Senha deve ser preenchido"); return false; }
 					
-					$.get("https://justrunplay.com.br/app_api/login.php", { email:email, senha:senha }, function(data){
+					$.get("https://board.projetotemporario.com.br/app_api/login.php", { email:email, senha:senha }, function(data){
 						if(data=="ERRO"){
 							alert("O E-mail ou a Senha utilizados não são válidos");
 						}else{
