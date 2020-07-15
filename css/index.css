@@ -171,10 +171,10 @@ h1 {
 	padding:0px 5px;
 }
 
-.topo-item1		{ float:left; color:#5EC4A3; padding:8px; font-size:24px; }
-.topo-item2		{ float:left; color:#5EC4A3; padding:8px; font-size:18px; padding-top:12px; }
-.topo-item3		{ float:right; color:#5EC4A3; padding:8px; font-size:24px; }
-.topo-item4		{ float:right; color:#5EC4A3; padding:8px; font-size:24px; }
+.topo-item1		{ float:left; color:#5EC4A3; padding:8px; font-size:30px; }
+.topo-item2		{ float:left; color:#5EC4A3; padding:8px; font-size:24px; padding-top:12px; }
+.topo-item3		{ float:right; color:#5EC4A3; padding:8px; font-size:30px; }
+.topo-item4		{ float:right; color:#5EC4A3; padding:8px; font-size:30px; }
 
 .botoes-rodape {
 	position:fixed;
