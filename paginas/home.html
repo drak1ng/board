@@ -24,7 +24,6 @@
 		<meta name="viewport" content="user-scalable=no, initial-scale=0.8, maximum-scale=0.8, minimum-scale=0.8, width=375, viewport-fit=cover" />
         <link rel="stylesheet" type="text/css" href="../css/index.css" />
         <link rel="stylesheet" type="text/css" href="../css/jquery.mobile-1.4.5.min.css" />
-        <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
         <title>Board Finance</title>
 		<script type="text/javascript" src="../js/jquery.min.js"></script>
@@ -62,7 +61,7 @@
 				
 				window.localStorage.setItem('url_voltar','home.html');
 				
-				$('#topo-item3').click(function(){ $('#menu_lateral').show(); });
+				$('.topo-item3').click(function(){ $('#menu_lateral').show(); });
 				
 				$.get("https://board.projetotemporario.com.br/app_api/home.php", { registrationId:registrationId, id_usuarios:id_usuarios, versao:'2' }, function(data){ $("#home-conteudo").html(data); });
 				
