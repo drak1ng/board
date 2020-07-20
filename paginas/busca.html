@@ -59,9 +59,9 @@
 				
 				var registrationId = window.localStorage.getItem('registrationId');
 				
-				var busca = window.localStorage.getItem('busca');
+				window.localStorage.setItem('url_voltar','home.html');
 				
-				window.localStorage.setItem('url_voltar','busca.html');
+				var busca = window.localStorage.getItem('busca');
 				
 				$('.topo-item1').click(function(){ $('#menu_lateral_categorias').show(); });
 				$('.topo-item3').click(function(){ $('#menu_lateral').show(); });
