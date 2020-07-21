@@ -79,13 +79,13 @@
 					if(senha==""){ alert("O campo Senha deve ser preenchido"); return false; }
 					if(senha!=senha2){ alert("As senhas não conferem"); return false; }
 					
-					$.get("https://board.projetotemporario.com.br/app_api/cadastro.php", { nome:nome, email:email, senha:senha }, function(data){
+					$.get("https://goboard.app/app_api/cadastro.php", { nome:nome, email:email, senha:senha }, function(data){
 						if(data=="ERRO_CELULAR"){
 							alert("Esse E-mail já foi utilizado em outro cadastro!");
 						}else if(data=="ERRO_IDADE"){
 							alert("Você precisa ser maior de 16 anos para se cadastrar!");
 						}else{
-							$.get("https://board.projetotemporario.com.br/app_api/login.php", { email:email, senha:senha }, function(data){
+							$.get("https://goboard.app/app_api/login.php", { email:email, senha:senha }, function(data){
 								var res = data.split(";");
 								window.localStorage.setItem('id_usuarios',res[0]);
 								window.localStorage.setItem('nome_usuarios',res[1]);

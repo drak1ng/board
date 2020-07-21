@@ -64,7 +64,7 @@
 				$('.topo-item1').click(function(){ $('#menu_lateral_categorias').show(); });
 				$('.topo-item3').click(function(){ $('#menu_lateral').show(); });
 				
-				$.get("https://board.projetotemporario.com.br/app_api/servicos.php", { registrationId:registrationId, id_usuarios:id_usuarios, versao:'2' }, function(data){ $("#servicos-conteudo").html(data); });
+				$.get("https://goboard.app/app_api/servicos.php", { registrationId:registrationId, id_usuarios:id_usuarios, versao:'2' }, function(data){ $("#servicos-conteudo").html(data); });
 				
 				
 				
