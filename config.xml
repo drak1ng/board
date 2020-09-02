@@ -87,7 +87,7 @@
 	</feature>
 	
 	<gap:plugin name="cordova-plugin-statusbar" source="npm" >
-		<preference name="StatusBarOverlaysWebView" value="true" />
+		<preference name="StatusBarOverlaysWebView" value="false" />
 		<preference name="StatusBarBackgroundColor" value="#1A203E" />
 		<preference name="StatusBarStyle" value="lightcontent" />
 		<preference name="StatusBarDefaultScrollToTop" value="true" />
@@ -148,7 +148,7 @@
 	<preference name="android-minSdkVersion"      		value="19" />             <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
 	<preference name="android-installLocation"    		value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
 	<preference name="stay-in-webview"            		value="false" />
-	<preference name="StatusBarOverlaysWebView"   		value="true" />
+	<preference name="StatusBarOverlaysWebView"   		value="false" />
 	<preference name="StatusBarBackgroundColor"   		value="#1A203E" />
 	<preference name="StatusBarStyle"             		value="lightcontent" />
 	<preference name="KeepRunning"				  		value="true"/>
