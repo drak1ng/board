@@ -148,8 +148,9 @@
 				
 		        function onDeviceReady() {
 			        StatusBar.backgroundColorByName("black");
-			        StatusBar.overlaysWebView(false);
+			        StatusBar.overlaysWebView(true);
 			        StatusBar.show();
+				    StatusBar.backgroundColorByHexString('#1A203E00');
 		            setTimeout(carregar, 500);
 		        }
 		        
