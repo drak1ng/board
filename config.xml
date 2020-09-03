@@ -83,10 +83,10 @@
 	
 	<!--IOS Status Bar-->
 	<gap:plugin name="cordova-plugin-statusbar" source="npm" >
-		<preference name="StatusBarOverlaysWebView" value="true" />
+		<preference name="StatusBarOverlaysWebView" value="false" />
 		<preference name="StatusBarBackgroundColor" value="#1A203E" />
 		<preference name="StatusBarStyle" value="lightcontent" />
-		<preference name="StatusBarDefaultScrollToTop" value="true" />
+		<preference name="StatusBarDefaultScrollToTop" value="false" />
 	</gap:plugin>
 	<preference name="webviewbounce" value="false" />
 	<preference name="DisallowOverscroll" value="true" />
