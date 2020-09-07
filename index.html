@@ -82,7 +82,7 @@
 				<input type="search" id="busca-home" placeholder="Buscar por" />
 			</form>
 			<script>
-				$('.menu-topo').click(function(){
+				$('.menu-topo-busca').click(function(){
 					$('.menu-busca').slideToggle();
 				});
 				function checarBusca(){
@@ -186,7 +186,9 @@
 				
 				$('#fechar_menu').click(function(){ $('#menu_lateral').hide(); });
 				$('#fechar_menu_categorias').click(function(){ $('#menu_lateral_categorias').hide(); });
-				$('#rodape-menu').click(function(){ $('#menu_lateral').show(); });
+				
+				$('#rodape-menu').click(function(){ $('#menu_lateral_categorias').show(); });
+				$('#menu-topo-usuario').click(function(){ $('#menu_lateral').show(); });
 				
 				$('.menu-lateral-item').click(function(){
 					var page = $(this).attr('rel');
