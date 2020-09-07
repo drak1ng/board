@@ -34,13 +34,6 @@
 	    
 	    <div data-role="page" style="background: #1A203E !important;">
 
-		    <div class="topo">
-				<div class="topo-item1"><i class="fa fa-bars" aria-hidden="true"></i></div>
-				<div class="topo-item2"><i class="fa fa-bell" aria-hidden="true"></i></div>
-				<div class="topo-item3"><i class="fa fa-cog" aria-hidden="true"></i></div>
-				<div class="topo-item4"><i class="fa fa-user" aria-hidden="true"></i></div>
-		    </div>
-
 			<div role="main" class="ui-content" style="text-align:center;">
 				<div class="conteudo" id="busca-conteudo">
 					<div style="padding-top:120px; text-align:center; font-size:13px; color:#FFF;">
@@ -65,10 +58,11 @@
 				
 				$('.topo-item1').click(function(){ $('#menu_lateral_categorias').show(); });
 				$('.topo-item3').click(function(){ $('#menu_lateral').show(); });
+	
+				$('.menu-rodape-item').css('color','#999');
+				$('#rodape-noticia').css('color','#FFF');
 				
 				$.get("https://goboard.app/app_api/busca.php", { registrationId:registrationId, id_usuarios:id_usuarios, busca:busca }, function(data){ $("#busca-conteudo").html(data); });
-				
-				
 				
 			</script>
 			
