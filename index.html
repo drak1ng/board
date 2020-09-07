@@ -66,9 +66,9 @@
 			.menu-busca input::-ms-input-placeholder	{ color:#1A203E; }
 			
 			.menu-rodape						{ display:none; width:100%; position:fixed; bottom:0px; left:0px; padding:5px 0px; z-index:99998; background:#12172f; -webkit-box-shadow: 0 0px 3px 0 rgba(0,0,0,0.4); box-shadow: 0 0px 3px 0 rgba(0,0,0,0.4); }
-		    .menu-rodape-item					{ width:20%; float:left; text-align:center; padding:2px 0px; }
-			.menu-rodape-item-icone				{ font-size:26px; color:#999; padding:2px 0px; }
-			.menu-rodape-item-titulo			{ font-size:11px; color:#999; }
+		    .menu-rodape-item					{ width:20%; float:left; text-align:center; padding:2px 0px; color:#999; }
+			.menu-rodape-item-icone				{ font-size:26px; padding:2px 0px; }
+			.menu-rodape-item-titulo			{ font-size:11px; }
 		</style>
 	</head>
     <body>
@@ -90,6 +90,10 @@
 					window.localStorage.setItem('busca',busca);
 					$.mobile.changePage("busca.html", { transition: "fade", changeHash: false });
 					return false;
+				}
+				if(cordova.platformId=='ios'){
+					$('.menu-topo').css('padding-top','28px');
+					$('.menu-busca').css('top','70px');
 				}
 			</script>
 	    </div>
