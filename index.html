@@ -101,23 +101,23 @@
 			</script>
 	    </div>
 	    <div class="menu-rodape">
-		    <div class="menu-rodape-item" id="rodape-noticia">
+		    <div class="menu-rodape-item" rel="home.html">
 			    <div class="menu-rodape-item-icone"><i class="fal fa-newspaper"></i></div>
 			    <div class="menu-rodape-item-titulo">Notícias</div>
 		    </div>
-		    <div class="menu-rodape-item" id="rodape-mercado">
+		    <div class="menu-rodape-item" rel="mercados.html">
 			    <div class="menu-rodape-item-icone"><i class="fal fa-analytics"></i></div>
 			    <div class="menu-rodape-item-titulo">Mercados</div>
 		    </div>
-		    <div class="menu-rodape-item" id="rodape-play">
+		    <div class="menu-rodape-item" rel="play.html">
 			    <div class="menu-rodape-item-icone"><i class="fal fa-play-circle"></i></div>
 			    <div class="menu-rodape-item-titulo">Play</div>
 		    </div>
-		    <div class="menu-rodape-item" id="rodape-operacoes">
+		    <div class="menu-rodape-item" rel="operacao.html">
 			    <div class="menu-rodape-item-icone"><i class="fas fa-sort-alt"></i></div>
 			    <div class="menu-rodape-item-titulo">Operações</div>
 		    </div>
-		    <div class="menu-rodape-item" id="rodape-menu">
+		    <div class="menu-rodape-item" rel="menu">
 			    <div class="menu-rodape-item-icone"><i class="fas fa-bars"></i></div>
 			    <div class="menu-rodape-item-titulo">Menu</div>
 		    </div>
@@ -183,8 +183,17 @@
 				$('#fechar_menu').click(function(){ $('#menu_lateral').hide(); });
 				$('#fechar_menu_categorias').click(function(){ $('#menu_lateral_categorias').hide(); });
 				
-				$('#rodape-menu').click(function(){ $('#menu_lateral_categorias').show(); });
 				$('.menu-topo-usuario').click(function(){ $('#menu_lateral').show(); });
+				
+				$('.menu-rodape-item').click(function(){
+					var x = $(this).attr('rel');
+					
+					if(x=="menu"){
+						$('#menu_lateral_categorias').show();
+					}else{
+						$.mobile.changePage(page, { transition: "none", changeHash: false });
+					}
+				});
 				
 				$('.menu-lateral-item').click(function(){
 					var page = $(this).attr('rel');
