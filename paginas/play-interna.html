@@ -59,7 +59,7 @@
 				$('.topo-item3').click(function(){ $('#menu_lateral').show(); });
 	
 				$('.menu-rodape-item').css('color','#999');
-				$('#rodape-noticia').css('color','#FFF');
+				$(".menu-rodape-item[rel='play.html']").css('color','#FFF');
 				
 				$.get("https://goboard.app/app_api/play-interna.php", { registrationId:registrationId, id_usuarios:id_usuarios, id_noticia:id_noticia }, function(data){ $("#play-interna-conteudo").html(data); });
 				
