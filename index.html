@@ -52,7 +52,7 @@
 			
 			.menu-lateral-item			{ color:#FFF; border-bottom:1px solid #333; padding:15px 10px 15px 0px; }
 			.menu-lateral-item-icone	{ float:left; font-size:24px; }
-			.menu-lateral-item-texto	{ float:left; font-size:15px; padding:5px 0px 0px 5px; text-transform:none; }
+			.menu-lateral-item-texto	{ float:left; font-size:15px; padding:5px 0px 0px 15px; text-transform:none; }
 			.menu-lateral-item-seta		{ float:right; font-size:16px; padding:6px 0px 0px 0px; }
 			
 			.menu-lateral-sair			{ color:#FFF; border-top:1px solid #333; padding:15px 10px 15px 0px; position:absolute; bottom:0px; right:15px; width:250px }
@@ -137,33 +137,39 @@
 		    <div style="background:#12172f; position:fixed; top:0px; left:0px; width:310px; height:100%; z-index:99999; overflow:scroll; padding:0px" id="menu_lateral_categorias_caixa"></div>
 		    <div style="background-color:rgba(0,0,0,0.8); position:fixed; top:0px; right:0px; width:calc(100% - 310px); height:100%; z-index:99999;" id="fechar_menu_categorias"></div>
 	    </div>
-	    <div style="display:none;" id="menu_lateral">
+	    <div style="display:;" id="menu_lateral">
 		    <div style="background:#12172f; position:fixed; top:0px; right:0px; width:260px; height:100%; z-index:99999; overflow:scroll; padding:0px 15px">
 			    <div class='menu-lateral-usuario'>
 			    	<div class='menu-lateral-usuario-icone'><i class="fas fa-user-circle"></i></div>
 			    	<div class='menu-lateral-usuario-nome'>João de Teste</div>
 			    </div>
 				<div class="menu-lateral-item" rel="alertas.html">
+					<div class="menu-lateral-item-icone"><i class="fal fa-exclamation-triangle"></i></div>
 					<div class="menu-lateral-item-texto">Alertas</div>
 					<div style="clear:both;"></div>
 				</div>
 				<div class="menu-lateral-item" rel="salvos.html">
+					<div class="menu-lateral-item-icone"><i class="fal fa-save"></i></div>
 					<div class="menu-lateral-item-texto">Salvos</div>
 					<div style="clear:both;"></div>
 				</div>
 				<div class="menu-lateral-item" rel="conta.html">
+					<div class="menu-lateral-item-icone"><i class="fal fa-file-user"></i></div>
 					<div class="menu-lateral-item-texto">Conta</div>
 					<div style="clear:both;"></div>
 				</div>
 				<div class="menu-lateral-item" rel="notificacoes.html">
+					<div class="menu-lateral-item-icone"><i class="fal fa-flag"></i></div>
 					<div class="menu-lateral-item-texto">Notificações</div>
 					<div style="clear:both;"></div>
 				</div>
 				<div class="menu-lateral-item" rel="indique.html">
+					<div class="menu-lateral-item-icone"><i class="fal fa-user-friends"></i></div>
 					<div class="menu-lateral-item-texto">Indique e Ganhe!</div>
 					<div style="clear:both;"></div>
 				</div>
 				<div class="menu-lateral-item" rel="configuracoes.html">
+					<div class="menu-lateral-item-icone"><i class="fal fa-cogs"></i></div>
 					<div class="menu-lateral-item-texto">App Configurações</div>
 					<div style="clear:both;"></div>
 				</div>
