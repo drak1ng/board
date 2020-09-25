@@ -201,6 +201,10 @@
 					}
 				});
 				
+				$('.menu-topo-logo').click(function(){
+					$.mobile.changePage("home.html", { transition: "fade", changeHash: false });
+				});
+				
 				$('.menu-lateral-item').click(function(){
 					var page = $(this).attr('rel');
 					
