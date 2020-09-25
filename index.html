@@ -45,10 +45,19 @@
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAS43qBsKsxeRK93aMPtN4eQaaQk0Lg60g"></script>
 		
 		<style>
-			.menu-lateral-item			{ color:#FFF; border-bottom:1px solid #333; padding:20px 20px 20px 0px; }
+			
+			.menu-lateral-usuario			{ border-bottom:1px solid #FFF; color:#FFF; padding:10px; margin:10px -10px; }
+			.menu-lateral-usuario-icone		{ float:left; font-size:32px; }
+			.menu-lateral-usuario-nome		{ margin-left:50px; padding:10px 0px; }
+			
+			.menu-lateral-item			{ color:#FFF; border-bottom:1px solid #333; padding:15px 10px 15px 0px; }
 			.menu-lateral-item-icone	{ float:left; font-size:24px; }
-			.menu-lateral-item-texto	{ float:left; font-size:15px; padding:5px 0px 0px 10px; }
+			.menu-lateral-item-texto	{ float:left; font-size:15px; padding:5px 0px 0px 5px; text-transform:none; }
 			.menu-lateral-item-seta		{ float:right; font-size:16px; padding:6px 0px 0px 0px; }
+			
+			.menu-lateral-sair			{ color:#FFF; border-top:1px solid #333; padding:15px 10px 15px 0px; position:absolute; bottom:0px; right:15px; width:250px }
+			.menu-lateral-sair-icone	{ float:left; font-size:24px; }
+			.menu-lateral-sair-texto	{ float:left; font-size:15px; padding:5px 0px 0px 10px; text-transform:none; }
 			
 
 			
@@ -130,47 +139,36 @@
 	    </div>
 	    <div style="display:none;" id="menu_lateral">
 		    <div style="background:#12172f; position:fixed; top:0px; right:0px; width:280px; height:100%; z-index:99999; overflow:scroll; padding:0px 15px">
-			    <br><br>
-				<div class="menu-lateral-item" rel="home.html">
-					<div class="menu-lateral-item-icone"><i class="fas fa-home"></i></div>
-					<div class="menu-lateral-item-texto">Home</div>
-					<div class="menu-lateral-item-seta"><i class="fas fa-chevron-right"></i></div>
+			    <div class='menu-lateral-usuario'>
+			    	<div class='menu-lateral-usuario-icone'><i class="fas fa-user-circle"></i></div>
+			    	<div class='menu-lateral-usuario-nome'>João de Teste</div>
+			    </div>
+				<div class="menu-lateral-item" rel="alertas.html">
+					<div class="menu-lateral-item-texto">Alertas</div>
 					<div style="clear:both;"></div>
 				</div>
-				<div class="menu-lateral-item" rel="home.html">
-					<div class="menu-lateral-item-icone"><i class="fal fa-newspaper"></i></div>
-					<div class="menu-lateral-item-texto">Notícias</div>
-					<div class="menu-lateral-item-seta"><i class="fas fa-chevron-right"></i></div>
+				<div class="menu-lateral-item" rel="salvos.html">
+					<div class="menu-lateral-item-texto">Salvos</div>
 					<div style="clear:both;"></div>
 				</div>
-				<div class="menu-lateral-item" rel="mercados.html">
-					<div class="menu-lateral-item-icone"><i class="fal fa-analytics"></i></div>
-					<div class="menu-lateral-item-texto">Mercados</div>
-					<div class="menu-lateral-item-seta"><i class="fas fa-chevron-right"></i></div>
+				<div class="menu-lateral-item" rel="conta.html">
+					<div class="menu-lateral-item-texto">Conta</div>
 					<div style="clear:both;"></div>
 				</div>
-				<div class="menu-lateral-item" rel="play.html">
-					<div class="menu-lateral-item-icone"><i class="fal fa-play-circle"></i></div>
-					<div class="menu-lateral-item-texto">Play</div>
-					<div class="menu-lateral-item-seta"><i class="fas fa-chevron-right"></i></div>
+				<div class="menu-lateral-item" rel="notificacoes.html">
+					<div class="menu-lateral-item-texto">Notificações</div>
 					<div style="clear:both;"></div>
 				</div>
-				<div class="menu-lateral-item" rel="operacao.html">
-					<div class="menu-lateral-item-icone"><i class="fas fa-sort-alt"></i></div>
-					<div class="menu-lateral-item-texto">Operações</div>
-					<div class="menu-lateral-item-seta"><i class="fas fa-chevron-right"></i></div>
+				<div class="menu-lateral-item" rel="indique.html">
+					<div class="menu-lateral-item-texto">Indique e Ganhe!</div>
 					<div style="clear:both;"></div>
 				</div>
 				<div class="menu-lateral-item" rel="configuracoes.html">
-					<div class="menu-lateral-item-icone"><i class="fas fa-cog"></i></div>
 					<div class="menu-lateral-item-texto">App Configurações</div>
-					<div class="menu-lateral-item-seta"><i class="fas fa-chevron-right"></i></div>
 					<div style="clear:both;"></div>
 				</div>
-				<div class="menu-lateral-item" rel="logout">
-					<div class="menu-lateral-item-icone"><i class="fas fa-power-off"></i></div>
-					<div class="menu-lateral-item-texto">Logout</div>
-					<div class="menu-lateral-item-seta"><i class="fas fa-chevron-right"></i></div>
+				<div class="menu-lateral-sair">
+					<div class="menu-lateral-sair-texto">Sair</div>
 					<div style="clear:both;"></div>
 				</div>
 		    </div>
@@ -220,6 +218,14 @@
 						$.mobile.changePage(page, { transition: "none", changeHash: false });
 					}
 					
+				});
+				
+				$('.menu-lateral-sair').click(function(){
+					window.localStorage.setItem('id_usuarios','');
+					window.localStorage.setItem('nome_usuarios','');
+					window.localStorage.setItem('tipo_usuarios','');
+					window.localStorage.setItem('foto_usuarios','');
+					$.mobile.changePage("login.html", { transition: "fade", changeHash: false });
 				});
 
 				
